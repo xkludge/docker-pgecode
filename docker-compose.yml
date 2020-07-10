@@ -1,0 +1,12 @@
+version: "2.4"
+services:
+    geocode:
+        build:
+            context: .
+        container_name: geocode
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./src:/opt/app
+        ports:
+            - "5000:5000"
