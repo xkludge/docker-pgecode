@@ -1,4 +1,4 @@
-# docker-pgecode
+# docker-pgeocode
 wip on a simple flask app for pgecode
 
 
