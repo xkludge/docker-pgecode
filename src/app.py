@@ -1,4 +1,3 @@
-import math
 import pgeocode
 import re
 
