@@ -1,5 +1,5 @@
 # docker-pgeocode
-wip on a simple flask app for pgecode
+wip on a simple flask app for pgeocode
 
 
 samples
