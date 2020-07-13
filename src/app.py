@@ -7,11 +7,11 @@ from flask import jsonify
 
 app = Flask(__name__)
 
-@app.route('/geocde/status', methods = ['GET'])
+@app.route('/geo/status', methods = ['GET'])
 def hello_world():
     return jsonify('all good')
 
-@app.route('/geocde/<country>/postal/<postal>', methods = ['GET'])
+@app.route('/geo/country/<country>/postal/<postal>', methods = ['GET'])
 def validate_address(country, postal):
     try:
         # hackish way to determine if its a postal code
