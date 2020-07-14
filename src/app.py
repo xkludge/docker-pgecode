@@ -26,9 +26,9 @@ def validate_address(country, postal):
         return jsonify({})
 
     # check to make sure pandas returns a valid response
-    if str(response.array[1]):
+    if str(response.array[1]) != 'nan':
         return jsonify(response.to_json())
-    return jsonify({})
+    return jsonify({}), 404
 
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0')
